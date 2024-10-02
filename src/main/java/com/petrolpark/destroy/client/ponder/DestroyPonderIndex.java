@@ -149,6 +149,10 @@ public class DestroyPonderIndex {
             .addStoryBoard("oil/seismometer", OilScenes::seismometer)
             .addStoryBoard("oil/seismograph", OilScenes::seismograph);
 
+        // Siphon
+        HELPER.forComponents(DestroyBlocks.SIPHON)
+            .addStoryBoard("processing/siphon", ProcessingScenes::siphon);
+
         // Tree Tap
         HELPER.forComponents(DestroyBlocks.TREE_TAP)      
             .addStoryBoard("processing/tree_tap", ProcessingScenes::treeTap);

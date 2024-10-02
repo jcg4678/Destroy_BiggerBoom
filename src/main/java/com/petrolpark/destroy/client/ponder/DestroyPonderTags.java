@@ -55,6 +55,7 @@ public class DestroyPonderTags {
             .add(DestroyBlocks.REDSTONE_PROGRAMMER)
             .add(DestroyItems.SEISMOMETER)
             .add(DestroyItems.SEISMOGRAPH)
+            .add(DestroyBlocks.SIPHON)
             .add(DestroyBlocks.TREE_TAP)
             .add(DestroyBlocks.VAT_CONTROLLER)
         ;
@@ -67,6 +68,7 @@ public class DestroyPonderTags {
             .add(DestroyBlocks.CATALYTIC_CONVERTER)
             .add(DestroyBlocks.CENTRIFUGE)
             .add(DestroyBlocks.PUMPJACK)
+            .add(DestroyBlocks.SIPHON)
             .add(DestroyBlocks.TREE_TAP)
             .add(DestroyBlocks.VAT_CONTROLLER)
         ;
@@ -87,6 +89,7 @@ public class DestroyPonderTags {
         PonderRegistry.TAGS.forTag(AllPonderTags.REDSTONE)
             .add(DestroyBlocks.DYNAMO)
             .add(DestroyBlocks.REDSTONE_PROGRAMMER)
+            .add(DestroyBlocks.SIPHON)
         ;
 
         PonderRegistry.TAGS.forTag(AllPonderTags.DISPLAY_SOURCES)

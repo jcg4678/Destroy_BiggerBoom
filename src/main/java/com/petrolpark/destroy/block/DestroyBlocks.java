@@ -283,6 +283,14 @@ public class DestroyBlocks {
             .sound(SoundType.SAND)
         ).register();
 
+    public static final BlockEntry<SiphonBlock> SIPHON = REGISTRATE.block("siphon", SiphonBlock::new)
+        .initialProperties(AllBlocks.FLUID_TANK)
+        .properties(p -> p
+            .mapColor(MapColor.METAL)
+        ).item()
+        .build()
+        .register();
+
     public static final BlockEntry<TestTubeRackBlock> TEST_TUBE_RACK = REGISTRATE.block("test_tube_rack", TestTubeRackBlock::new)
         .initialProperties(() -> Blocks.OAK_PLANKS)
         .properties(p -> p
@@ -989,7 +997,7 @@ public class DestroyBlocks {
         ).tag(BlockTags.MINEABLE_WITH_AXE, BlockTags.PLANKS)
         .item(CombustibleBlockItem::new)
         .tag(ItemTags.PLANKS)
-        .onRegister(i -> i.setBurnTime(20000))
+        .onRegister(i -> i.setBurnTime(2000))
         .build()
         .register();
 
